@@ -1,0 +1,188 @@
+.nav {
+  height: 50px;
+}
+
+.nav-item {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.nav-col .nav-item{
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.nav-item.active {
+  background-color: #f0f0f0;
+}
+
+.nav-col {
+  margin-bottom: 30px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.nav-col h4 {
+  margin-bottom: 0.5rem;
+  margin-top: 20px;
+}
+
+.nav-link {
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.nav-menu-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+@media (min-width: 768px) {
+  .nav-item {
+    margin: 0 22px;
+  }
+
+  .nav-col h4 {
+    margin-left: 22px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-item {
+    margin: 0 40px;
+  }
+
+  .nav-col h4 {
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .nav-item {
+    margin: 0 80px;
+  }
+
+  .nav-col h4 {
+    margin-left: 80px;
+  }
+}
+
+.nav-menu {
+  display: block;
+}
+
+@media (max-width: 760px) {
+  .nav-menu {
+    display: none;
+  }
+}
+
+.nav-col .nav-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item:hover {
+  font-weight: bold;
+}
+
+.nav-item:hover ~ .nav-item {
+  color: grey;
+}
+
+.nav-item.active {
+  font-weight: bold;
+}
+
+.nav-item.active ~ .nav-item {
+  color: grey;
+}
+
+.nav-col h4 {
+  margin-bottom: 0.5rem;
+}
+
+.image-container {
+  max-height: 525px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.welcome-text {
+  font-size: 2rem; 
+  text-align: center;
+  padding: 0 10px; 
+}
+
+
+@media (min-width: 320px) {
+  .image-container {
+    max-height: 116px;
+  }
+  .welcome-text{
+    font-size: 0.5rem;
+    padding: 0 ;
+    margin: 0; 
+  }
+}
+
+@media (min-width: 375px) {
+  .image-container {
+    max-height: 130px;
+  }
+  .welcome-text{
+    font-size: 0.6rem;
+    padding: 0 ;
+    margin: 0; 
+  }
+}
+
+@media (min-width: 420px) {
+  .image-container {
+    max-height: 155px;
+  }
+  .welcome-text{
+    font-size: 0.7rem;
+    padding: 0 ;
+    margin: 0; 
+  }
+}
+
+@media (min-width: 768px) {
+  .image-container {
+    max-height: 280px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .image-container {
+    max-height: 325px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .image-container {
+    max-height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

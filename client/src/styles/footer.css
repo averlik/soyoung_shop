@@ -1,0 +1,101 @@
+.footer {
+    padding: 0 60px 60px;
+    background-color: rgba(66, 98, 25, 0.28);
+    height: 540px;
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+}
+
+.footer_content {
+    display: flex; /* Установка flex контейнера */
+    flex-direction: row; /* Расположение элементов в строку */
+    margin-top: 83px; /* Отступ от верха футера */
+    column-gap: 183px;
+    flex-wrap: wrap; /* Разрешение переноса элементов на новую строку */
+    position: relative; /* Добавляем относительное позиционирование для линий */
+}
+
+.footer_header{
+    padding-bottom: 15px;
+    font-size: 18px; /* Установка размера шрифта */
+    font-weight: 600; /* Установка стиля шрифта semibold */
+}
+
+.footer_nav {
+    padding-bottom: 15px;
+    max-height: 314px;
+}
+
+
+.footer_text ul li {
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 15px;
+
+    text-transform: uppercase; 
+    color: black;
+    transition: transform 500ms ease;
+}
+
+.footer_text ul li a {
+    display: flex; /* Делаем элемент блочным */
+    flex-direction: row;
+    color: inherit;
+    align-items: center;
+}
+
+.footer_text ul li a .geo-icon {
+    margin-right: 10px; /* Добавим отступ между иконкой и текстом */
+}
+
+.footer_text ul li:hover {
+    transform: scale(1.1);
+    color: grey; /* Изменяем цвет текста при наведении на серый */
+}
+
+.footer_text ul li.active {
+    color: black;
+}
+
+.footer_social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 30px;
+}
+
+.social_icons a{
+    padding: 0 60px;
+    
+} 
+
+.social_icons img{
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.create-line-left,
+.create-line-right {
+    content: "";
+    background: black;
+    height: 1px;
+    width: 100vw; /* Ширина линий равна ширине всего экрана */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.create-line-left {
+    left: calc(50% + 280px); /* Расположение линии слева с отступом от середины экрана */
+}
+
+.create-line-right {
+    right: calc(50% + 280px); /* Расположение линии справа с отступом от середины экрана */
+}
+
+.footer_shopname{
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+}
